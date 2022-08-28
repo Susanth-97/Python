@@ -1,0 +1,54 @@
+print("Welcome to my quiz")
+
+playing=input("Do you want to play? ")
+
+if playing != "Yes":
+      quit()
+
+print("Okay! let's play")
+intro=input("Enter your name ")
+print("Welcome! " + str(intro))
+score=0
+
+answer=input("what is CPU stand for? ")
+if answer == "central processing unit":
+    print("Correct")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer=input("what is GPU stand for? ")
+if answer == "graphic processing unit":
+    print("Correct")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer=input("what is NIC stand for? ")
+if answer == "network interface controller":
+    print("Correct")
+    score += 1
+else:
+    print("Incorrect!")
+
+print("Answer the following questions as yes or no")
+
+answer=input("Is NIC important for a computer? ")
+if answer == "Yes":
+    print("Correct")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer=input("Is microprocessor part of a computer? ")
+if answer.lower() == "Yes":
+    print("Correct")
+    score += 1
+else:
+    print("Incorrect!")
+
+
+
+print("You answered " + str(score) + " correctly")
+print("your percentage is " + str((score/5)*100) + "%.")
+print ("Thank you for participating in the quiz ")
